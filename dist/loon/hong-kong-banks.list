@@ -1,0 +1,48 @@
+# Hong Kong Banks
+# Consumer-facing Hong Kong bank websites from HKMA data plus licensed virtual bank websites.
+# Generated for Loon from MyShuntRules
+# Format: Loon rule list
+
+DOMAIN-SUFFIX,airstarbank.com
+DOMAIN-SUFFIX,antbank.hk
+DOMAIN-SUFFIX,asia.ccb.com
+DOMAIN-SUFFIX,bangkokbank.com
+DOMAIN-SUFFIX,bank.hangseng.com
+DOMAIN-SUFFIX,bankcomm.com.hk
+DOMAIN-SUFFIX,bdo.com.ph
+DOMAIN-SUFFIX,biz-ebanking.hangseng.com
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,business.hsbc.com.hk
+DOMAIN-SUFFIX,chbank.com
+DOMAIN-SUFFIX,chiyubank.com
+DOMAIN-SUFFIX,citibank.com.hk
+DOMAIN-SUFFIX,cmbwinglungbank.com
+DOMAIN-SUFFIX,cncbinternational.com
+DOMAIN-SUFFIX,commerzbank.hk
+DOMAIN-SUFFIX,dahsing.com
+DOMAIN-SUFFIX,dbs.com.hk
+DOMAIN-SUFFIX,forms.online.standardchartered.com
+DOMAIN-SUFFIX,fubonbank.com.hk
+DOMAIN-SUFFIX,fusionbank.com
+DOMAIN-SUFFIX,hangseng.com
+DOMAIN-SUFFIX,hk.bankcomm.com
+DOMAIN-SUFFIX,hkbea.com
+DOMAIN-SUFFIX,hlb.com.my
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,icbcasia.com
+DOMAIN-SUFFIX,iobhongkong.com
+DOMAIN-SUFFIX,livibank.com
+DOMAIN-SUFFIX,mox.com
+DOMAIN-SUFFIX,myebankasia.icbc.com.cn
+DOMAIN-SUFFIX,ncb.com.hk
+DOMAIN-SUFFIX,ocbcwhhk.com
+DOMAIN-SUFFIX,online.asia.ccb.com
+DOMAIN-SUFFIX,paob.com.hk
+DOMAIN-SUFFIX,personal.hsbc.com.hk
+DOMAIN-SUFFIX,publicbank.com.hk
+DOMAIN-SUFFIX,sc.com
+DOMAIN-SUFFIX,shacombank.com.hk
+DOMAIN-SUFFIX,uobgroup.com
+DOMAIN-SUFFIX,welab.bank
+DOMAIN-SUFFIX,ww2.hkbea-cyberbanking.com
+DOMAIN-SUFFIX,za.group

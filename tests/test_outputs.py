@@ -32,3 +32,27 @@ def test_manifest_contains_required_fields() -> None:
 
     for item in manifest["rules"]:
         assert {"name", "category", "platform", "path", "raw_url"}.issubset(item)
+
+
+def test_bank_rule_sources_have_expected_official_coverage() -> None:
+    hk_rules = (ROOT / "sources" / "custom" / "hong-kong-banks.txt").read_text(encoding="utf-8")
+    us_rules = (ROOT / "sources" / "custom" / "us-banks.txt").read_text(encoding="utf-8")
+    finance_rules = (ROOT / "sources" / "custom" / "us-financial-services.txt").read_text(encoding="utf-8")
+
+    assert hk_rules.count("DOMAIN-SUFFIX,") >= 35
+    assert us_rules.count("DOMAIN-SUFFIX,") >= 3_500
+    assert "DOMAIN-SUFFIX,hsbc.com.hk" in hk_rules
+    assert "DOMAIN-SUFFIX,mox.com" in hk_rules
+    assert "DOMAIN-SUFFIX,bankofamerica.com" in us_rules
+    assert finance_rules.count("DOMAIN-SUFFIX,") >= 50
+    assert "DOMAIN-SUFFIX,schwab.com" in finance_rules
+    assert "DOMAIN-SUFFIX,fidelity.com" in finance_rules
+    assert "DOMAIN-SUFFIX,revolut.com" in finance_rules
+    assert "DOMAIN-SUFFIX,interactivebrokers.com" in finance_rules
+
+    exported_finance_rules = (ROOT / "dist" / "surge" / "us-financial-services.list").read_text(
+        encoding="utf-8"
+    )
+    assert "DOMAIN-SUFFIX,schwab.com" in exported_finance_rules
+    assert "DOMAIN-SUFFIX,fidelity.com" in exported_finance_rules
+    assert "DOMAIN-SUFFIX,revolut.com" in exported_finance_rules

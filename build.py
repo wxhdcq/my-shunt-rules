@@ -10,6 +10,7 @@ PYTHON = sys.executable
 # Keep the build order explicit here so local runs and GitHub Actions stay identical.
 STEPS = [
     ("fetch_upstream", [PYTHON, "scripts/fetch_upstream.py"]),
+    ("update_bank_rules", [PYTHON, "scripts/update_bank_rules.py"]),
     ("normalize_rules", [PYTHON, "scripts/normalize_rules.py"]),
     ("validate_rules", [PYTHON, "scripts/validate_rules.py"]),
     ("merge_rules", [PYTHON, "scripts/merge_rules.py"]),

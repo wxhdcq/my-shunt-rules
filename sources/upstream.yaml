@@ -52,6 +52,18 @@ categories:
     title: PayPal
     description: PayPal related domains and endpoints.
     source_file: paypal.txt
+  - name: hong-kong-banks
+    title: Hong Kong Banks
+    description: Consumer-facing Hong Kong bank websites from HKMA data plus licensed virtual bank websites.
+    source_file: hong-kong-banks.txt
+  - name: us-financial-services
+    title: US Financial Services
+    description: US-focused brokerages, wealth platforms, fintech banking, payments, and money transfer services.
+    source_file: us-financial-services.txt
+  - name: us-banks
+    title: United States Banks
+    description: Primary websites reported by active FDIC-insured banking institutions, excluding domains claimed by the financial-services category.
+    source_file: us-banks.txt
   - name: netflix
     title: Netflix
     description: Netflix related domains and endpoints.
