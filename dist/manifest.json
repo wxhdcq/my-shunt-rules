@@ -105,6 +105,13 @@
       "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/hbo.list"
     },
     {
+      "name": "Hong Kong Banks",
+      "category": "hong-kong-banks",
+      "platform": "clash",
+      "path": "dist/clash/hong-kong-banks.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/hong-kong-banks.list"
+    },
+    {
       "name": "Microsoft",
       "category": "microsoft",
       "platform": "clash",
@@ -159,6 +166,20 @@
       "platform": "clash",
       "path": "dist/clash/telegram.list",
       "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/telegram.list"
+    },
+    {
+      "name": "United States Banks",
+      "category": "us-banks",
+      "platform": "clash",
+      "path": "dist/clash/us-banks.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/us-banks.list"
+    },
+    {
+      "name": "US Financial Services",
+      "category": "us-financial-services",
+      "platform": "clash",
+      "path": "dist/clash/us-financial-services.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/us-financial-services.list"
     },
     {
       "name": "YouTube",
@@ -266,6 +287,13 @@
       "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/hbo.list"
     },
     {
+      "name": "Hong Kong Banks",
+      "category": "hong-kong-banks",
+      "platform": "loon",
+      "path": "dist/loon/hong-kong-banks.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/hong-kong-banks.list"
+    },
+    {
       "name": "Microsoft",
       "category": "microsoft",
       "platform": "loon",
@@ -320,6 +348,20 @@
       "platform": "loon",
       "path": "dist/loon/telegram.list",
       "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/telegram.list"
+    },
+    {
+      "name": "United States Banks",
+      "category": "us-banks",
+      "platform": "loon",
+      "path": "dist/loon/us-banks.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/us-banks.list"
+    },
+    {
+      "name": "US Financial Services",
+      "category": "us-financial-services",
+      "platform": "loon",
+      "path": "dist/loon/us-financial-services.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/us-financial-services.list"
     },
     {
       "name": "YouTube",
@@ -427,6 +469,13 @@
       "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/hbo.list"
     },
     {
+      "name": "Hong Kong Banks",
+      "category": "hong-kong-banks",
+      "platform": "surge",
+      "path": "dist/surge/hong-kong-banks.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/hong-kong-banks.list"
+    },
+    {
       "name": "Microsoft",
       "category": "microsoft",
       "platform": "surge",
@@ -481,6 +530,20 @@
       "platform": "surge",
       "path": "dist/surge/telegram.list",
       "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/telegram.list"
+    },
+    {
+      "name": "United States Banks",
+      "category": "us-banks",
+      "platform": "surge",
+      "path": "dist/surge/us-banks.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/us-banks.list"
+    },
+    {
+      "name": "US Financial Services",
+      "category": "us-financial-services",
+      "platform": "surge",
+      "path": "dist/surge/us-financial-services.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/us-financial-services.list"
     },
     {
       "name": "YouTube",
