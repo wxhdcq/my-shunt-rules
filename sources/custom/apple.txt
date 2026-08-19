@@ -1,0 +1,3 @@
+# Custom Apple rules
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com

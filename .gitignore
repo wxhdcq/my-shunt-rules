@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Build artifacts
+sources/cache/
+
+# Private local configuration
+config/private/
+local/
+*.local.*
+*.secret.*
+*.private.*
+*.token
+*.key
+
+# Logs
+*.log

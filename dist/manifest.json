@@ -1,0 +1,493 @@
+{
+  "project": "MyShuntRules",
+  "repository": {
+    "owner": "wxhdcq",
+    "repo": "my-shunt-rules",
+    "branch": "main"
+  },
+  "rules": [
+    {
+      "name": "AI",
+      "category": "ai",
+      "platform": "clash",
+      "path": "dist/clash/ai.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/ai.list"
+    },
+    {
+      "name": "Amazon",
+      "category": "amazon",
+      "platform": "clash",
+      "path": "dist/clash/amazon.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/amazon.list"
+    },
+    {
+      "name": "Apple CN",
+      "category": "apple-cn",
+      "platform": "clash",
+      "path": "dist/clash/apple-cn.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/apple-cn.list"
+    },
+    {
+      "name": "Apple",
+      "category": "apple",
+      "platform": "clash",
+      "path": "dist/clash/apple.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/apple.list"
+    },
+    {
+      "name": "Bilibili",
+      "category": "bilibili",
+      "platform": "clash",
+      "path": "dist/clash/bilibili.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/bilibili.list"
+    },
+    {
+      "name": "China",
+      "category": "china",
+      "platform": "clash",
+      "path": "dist/clash/china.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/china.list"
+    },
+    {
+      "name": "Claude",
+      "category": "claude",
+      "platform": "clash",
+      "path": "dist/clash/claude.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/claude.list"
+    },
+    {
+      "name": "Direct",
+      "category": "direct",
+      "platform": "clash",
+      "path": "dist/clash/direct.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/direct.list"
+    },
+    {
+      "name": "Discord",
+      "category": "discord",
+      "platform": "clash",
+      "path": "dist/clash/discord.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/discord.list"
+    },
+    {
+      "name": "Disney",
+      "category": "disney",
+      "platform": "clash",
+      "path": "dist/clash/disney.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/disney.list"
+    },
+    {
+      "name": "Gemini",
+      "category": "gemini",
+      "platform": "clash",
+      "path": "dist/clash/gemini.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/gemini.list"
+    },
+    {
+      "name": "Global",
+      "category": "global",
+      "platform": "clash",
+      "path": "dist/clash/global.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/global.list"
+    },
+    {
+      "name": "Google",
+      "category": "google",
+      "platform": "clash",
+      "path": "dist/clash/google.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/google.list"
+    },
+    {
+      "name": "HBO",
+      "category": "hbo",
+      "platform": "clash",
+      "path": "dist/clash/hbo.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/hbo.list"
+    },
+    {
+      "name": "Microsoft",
+      "category": "microsoft",
+      "platform": "clash",
+      "path": "dist/clash/microsoft.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/microsoft.list"
+    },
+    {
+      "name": "Netflix",
+      "category": "netflix",
+      "platform": "clash",
+      "path": "dist/clash/netflix.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/netflix.list"
+    },
+    {
+      "name": "Nintendo",
+      "category": "nintendo",
+      "platform": "clash",
+      "path": "dist/clash/nintendo.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/nintendo.list"
+    },
+    {
+      "name": "OpenAI",
+      "category": "openai",
+      "platform": "clash",
+      "path": "dist/clash/openai.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/openai.list"
+    },
+    {
+      "name": "PayPal",
+      "category": "paypal",
+      "platform": "clash",
+      "path": "dist/clash/paypal.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/paypal.list"
+    },
+    {
+      "name": "Reject",
+      "category": "reject",
+      "platform": "clash",
+      "path": "dist/clash/reject.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/reject.list"
+    },
+    {
+      "name": "Supercell",
+      "category": "supercell",
+      "platform": "clash",
+      "path": "dist/clash/supercell.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/supercell.list"
+    },
+    {
+      "name": "Telegram",
+      "category": "telegram",
+      "platform": "clash",
+      "path": "dist/clash/telegram.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/telegram.list"
+    },
+    {
+      "name": "YouTube",
+      "category": "youtube",
+      "platform": "clash",
+      "path": "dist/clash/youtube.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/clash/youtube.list"
+    },
+    {
+      "name": "AI",
+      "category": "ai",
+      "platform": "loon",
+      "path": "dist/loon/ai.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/ai.list"
+    },
+    {
+      "name": "Amazon",
+      "category": "amazon",
+      "platform": "loon",
+      "path": "dist/loon/amazon.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/amazon.list"
+    },
+    {
+      "name": "Apple CN",
+      "category": "apple-cn",
+      "platform": "loon",
+      "path": "dist/loon/apple-cn.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/apple-cn.list"
+    },
+    {
+      "name": "Apple",
+      "category": "apple",
+      "platform": "loon",
+      "path": "dist/loon/apple.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/apple.list"
+    },
+    {
+      "name": "Bilibili",
+      "category": "bilibili",
+      "platform": "loon",
+      "path": "dist/loon/bilibili.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/bilibili.list"
+    },
+    {
+      "name": "China",
+      "category": "china",
+      "platform": "loon",
+      "path": "dist/loon/china.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/china.list"
+    },
+    {
+      "name": "Claude",
+      "category": "claude",
+      "platform": "loon",
+      "path": "dist/loon/claude.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/claude.list"
+    },
+    {
+      "name": "Direct",
+      "category": "direct",
+      "platform": "loon",
+      "path": "dist/loon/direct.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/direct.list"
+    },
+    {
+      "name": "Discord",
+      "category": "discord",
+      "platform": "loon",
+      "path": "dist/loon/discord.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/discord.list"
+    },
+    {
+      "name": "Disney",
+      "category": "disney",
+      "platform": "loon",
+      "path": "dist/loon/disney.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/disney.list"
+    },
+    {
+      "name": "Gemini",
+      "category": "gemini",
+      "platform": "loon",
+      "path": "dist/loon/gemini.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/gemini.list"
+    },
+    {
+      "name": "Global",
+      "category": "global",
+      "platform": "loon",
+      "path": "dist/loon/global.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/global.list"
+    },
+    {
+      "name": "Google",
+      "category": "google",
+      "platform": "loon",
+      "path": "dist/loon/google.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/google.list"
+    },
+    {
+      "name": "HBO",
+      "category": "hbo",
+      "platform": "loon",
+      "path": "dist/loon/hbo.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/hbo.list"
+    },
+    {
+      "name": "Microsoft",
+      "category": "microsoft",
+      "platform": "loon",
+      "path": "dist/loon/microsoft.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/microsoft.list"
+    },
+    {
+      "name": "Netflix",
+      "category": "netflix",
+      "platform": "loon",
+      "path": "dist/loon/netflix.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/netflix.list"
+    },
+    {
+      "name": "Nintendo",
+      "category": "nintendo",
+      "platform": "loon",
+      "path": "dist/loon/nintendo.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/nintendo.list"
+    },
+    {
+      "name": "OpenAI",
+      "category": "openai",
+      "platform": "loon",
+      "path": "dist/loon/openai.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/openai.list"
+    },
+    {
+      "name": "PayPal",
+      "category": "paypal",
+      "platform": "loon",
+      "path": "dist/loon/paypal.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/paypal.list"
+    },
+    {
+      "name": "Reject",
+      "category": "reject",
+      "platform": "loon",
+      "path": "dist/loon/reject.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/reject.list"
+    },
+    {
+      "name": "Supercell",
+      "category": "supercell",
+      "platform": "loon",
+      "path": "dist/loon/supercell.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/supercell.list"
+    },
+    {
+      "name": "Telegram",
+      "category": "telegram",
+      "platform": "loon",
+      "path": "dist/loon/telegram.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/telegram.list"
+    },
+    {
+      "name": "YouTube",
+      "category": "youtube",
+      "platform": "loon",
+      "path": "dist/loon/youtube.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/loon/youtube.list"
+    },
+    {
+      "name": "AI",
+      "category": "ai",
+      "platform": "surge",
+      "path": "dist/surge/ai.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/ai.list"
+    },
+    {
+      "name": "Amazon",
+      "category": "amazon",
+      "platform": "surge",
+      "path": "dist/surge/amazon.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/amazon.list"
+    },
+    {
+      "name": "Apple CN",
+      "category": "apple-cn",
+      "platform": "surge",
+      "path": "dist/surge/apple-cn.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/apple-cn.list"
+    },
+    {
+      "name": "Apple",
+      "category": "apple",
+      "platform": "surge",
+      "path": "dist/surge/apple.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/apple.list"
+    },
+    {
+      "name": "Bilibili",
+      "category": "bilibili",
+      "platform": "surge",
+      "path": "dist/surge/bilibili.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/bilibili.list"
+    },
+    {
+      "name": "China",
+      "category": "china",
+      "platform": "surge",
+      "path": "dist/surge/china.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/china.list"
+    },
+    {
+      "name": "Claude",
+      "category": "claude",
+      "platform": "surge",
+      "path": "dist/surge/claude.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/claude.list"
+    },
+    {
+      "name": "Direct",
+      "category": "direct",
+      "platform": "surge",
+      "path": "dist/surge/direct.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/direct.list"
+    },
+    {
+      "name": "Discord",
+      "category": "discord",
+      "platform": "surge",
+      "path": "dist/surge/discord.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/discord.list"
+    },
+    {
+      "name": "Disney",
+      "category": "disney",
+      "platform": "surge",
+      "path": "dist/surge/disney.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/disney.list"
+    },
+    {
+      "name": "Gemini",
+      "category": "gemini",
+      "platform": "surge",
+      "path": "dist/surge/gemini.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/gemini.list"
+    },
+    {
+      "name": "Global",
+      "category": "global",
+      "platform": "surge",
+      "path": "dist/surge/global.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/global.list"
+    },
+    {
+      "name": "Google",
+      "category": "google",
+      "platform": "surge",
+      "path": "dist/surge/google.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/google.list"
+    },
+    {
+      "name": "HBO",
+      "category": "hbo",
+      "platform": "surge",
+      "path": "dist/surge/hbo.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/hbo.list"
+    },
+    {
+      "name": "Microsoft",
+      "category": "microsoft",
+      "platform": "surge",
+      "path": "dist/surge/microsoft.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/microsoft.list"
+    },
+    {
+      "name": "Netflix",
+      "category": "netflix",
+      "platform": "surge",
+      "path": "dist/surge/netflix.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/netflix.list"
+    },
+    {
+      "name": "Nintendo",
+      "category": "nintendo",
+      "platform": "surge",
+      "path": "dist/surge/nintendo.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/nintendo.list"
+    },
+    {
+      "name": "OpenAI",
+      "category": "openai",
+      "platform": "surge",
+      "path": "dist/surge/openai.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/openai.list"
+    },
+    {
+      "name": "PayPal",
+      "category": "paypal",
+      "platform": "surge",
+      "path": "dist/surge/paypal.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/paypal.list"
+    },
+    {
+      "name": "Reject",
+      "category": "reject",
+      "platform": "surge",
+      "path": "dist/surge/reject.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/reject.list"
+    },
+    {
+      "name": "Supercell",
+      "category": "supercell",
+      "platform": "surge",
+      "path": "dist/surge/supercell.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/supercell.list"
+    },
+    {
+      "name": "Telegram",
+      "category": "telegram",
+      "platform": "surge",
+      "path": "dist/surge/telegram.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/telegram.list"
+    },
+    {
+      "name": "YouTube",
+      "category": "youtube",
+      "platform": "surge",
+      "path": "dist/surge/youtube.list",
+      "raw_url": "https://raw.githubusercontent.com/wxhdcq/my-shunt-rules/main/dist/surge/youtube.list"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Direct
+# Custom direct supplement rules.
+# Generated for Clash/Mihomo from MyShuntRules
+# Format: classical rule-set for Mihomo/Clash.Meta compatible clients
+# Note: PROCESS-NAME rules require Mihomo/Clash.Meta support
+
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidubce.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,weixin.qq.com
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve

@@ -1,0 +1,16 @@
+# Apple CN
+# Apple mainland China supplement rules.
+# Generated for Clash/Mihomo from MyShuntRules
+# Format: classical rule-set for Mihomo/Clash.Meta compatible clients
+# Note: PROCESS-NAME rules require Mihomo/Clash.Meta support
+
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,apple-pay-gateway.apple
+DOMAIN-SUFFIX,applemusic.com
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,push.apple.com

@@ -1,0 +1,15 @@
+# Apple CN
+# Apple mainland China supplement rules.
+# Generated for Surge from MyShuntRules
+# Format: Surge rule list
+
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,apple-pay-gateway.apple
+DOMAIN-SUFFIX,applemusic.com
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,push.apple.com

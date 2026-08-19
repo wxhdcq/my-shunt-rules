@@ -1,0 +1,220 @@
+repo:
+  owner: wxhdcq
+  name: my-shunt-rules
+  branch: main
+
+categories:
+  - name: supercell
+    title: Supercell
+    description: Supercell game domains and related endpoints.
+    source_file: supercell.txt
+  - name: youtube
+    title: YouTube
+    description: YouTube related domains and endpoints.
+    source_file: youtube.txt
+  - name: google
+    title: Google
+    description: Google core services and supporting domains.
+    source_file: google.txt
+  - name: telegram
+    title: Telegram
+    description: Telegram messaging services.
+    source_file: telegram.txt
+  - name: openai
+    title: OpenAI
+    description: OpenAI APIs and ChatGPT services.
+    source_file: openai.txt
+  - name: apple
+    title: Apple
+    description: Apple services and iCloud related domains.
+    source_file: apple.txt
+  - name: apple-cn
+    title: Apple CN
+    description: Apple mainland China supplement rules.
+    source_file: apple-cn.txt
+  - name: microsoft
+    title: Microsoft
+    description: Microsoft services and cloud domains.
+    source_file: microsoft.txt
+  - name: discord
+    title: Discord
+    description: Discord related domains and endpoints.
+    source_file: discord.txt
+  - name: amazon
+    title: Amazon
+    description: Amazon related domains and endpoints.
+    source_file: amazon.txt
+  - name: nintendo
+    title: Nintendo
+    description: Nintendo related domains and endpoints.
+    source_file: nintendo.txt
+  - name: paypal
+    title: PayPal
+    description: PayPal related domains and endpoints.
+    source_file: paypal.txt
+  - name: netflix
+    title: Netflix
+    description: Netflix related domains and endpoints.
+    source_file: netflix.txt
+  - name: disney
+    title: Disney
+    description: Disney related domains and endpoints.
+    source_file: disney.txt
+  - name: hbo
+    title: HBO
+    description: HBO related domains and endpoints.
+    source_file: hbo.txt
+  - name: bilibili
+    title: Bilibili
+    description: Bilibili related domains and endpoints.
+    source_file: bilibili.txt
+  - name: gemini
+    title: Gemini
+    description: Gemini related domains and endpoints.
+    source_file: gemini.txt
+  - name: claude
+    title: Claude
+    description: Claude and Anthropic related domains and endpoints.
+    source_file: claude.txt
+  - name: ai
+    title: AI
+    description: General AI services supplement rules.
+    source_file: ai.txt
+  - name: global
+    title: Global
+    description: Global services supplement rules.
+    source_file: proxy.txt
+  - name: china
+    title: China
+    description: China direct rules for mainland services.
+    source_file: china.txt
+  - name: direct
+    title: Direct
+    description: Custom direct supplement rules.
+    source_file: direct.txt
+  - name: reject
+    title: Reject
+    description: Advertising and tracking reject rules.
+    source_file: reject.txt
+
+sources:
+  - name: bojin-supercell-surge
+    category: supercell
+    platform: surge
+    url: https://surge.bojin.co/geosite/supercell
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-youtube-surge
+    category: youtube
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/YouTube/YouTube.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-google-surge
+    category: google
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Google/Google.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-telegram-surge
+    category: telegram
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-openai-surge
+    category: openai
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/OpenAI/OpenAI.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-apple-surge
+    category: apple
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-microsoft-surge
+    category: microsoft
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-discord-surge
+    category: discord
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Discord/Discord.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-amazon-surge
+    category: amazon
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Amazon/Amazon.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-nintendo-surge
+    category: nintendo
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Nintendo/Nintendo.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-paypal-surge
+    category: paypal
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-netflix-surge
+    category: netflix
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-disney-surge
+    category: disney
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-hbo-surge
+    category: hbo
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBO/HBO.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-bilibili-surge
+    category: bilibili
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBili/BiliBili.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-gemini-surge
+    category: gemini
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Gemini/Gemini.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-claude-surge
+    category: claude
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Claude/Claude.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-global-surge
+    category: global
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Global/Global.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-china-surge
+    category: china
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/China/China.list
+    enabled: true
+    priority: 100
+  - name: blackmatrix7-advertisinglite-surge
+    category: reject
+    platform: surge
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AdvertisingLite/AdvertisingLite.list
+    enabled: true
+    priority: 100

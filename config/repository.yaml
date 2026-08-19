@@ -1,0 +1,5 @@
+owner: wxhdcq
+name: my-shunt-rules
+branch: main
+title: MyShuntRules
+description: 独立维护的分流规则仓库，自动生成 Surge、Loon、Clash/Mihomo 三端规则文件。

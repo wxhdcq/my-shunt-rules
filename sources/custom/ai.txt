@@ -1,0 +1,22 @@
+# 用途：独立维护 AI 服务规则，便于单独引用
+# 适用：通用大模型、AI 助手、生成式服务和相关静态资源
+
+# OpenAI
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+
+# Google Gemini / AI Studio
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+
+# Anthropic / Claude
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# Perplexity / xAI / Poe
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,poe.com

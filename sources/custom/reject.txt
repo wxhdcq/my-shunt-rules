@@ -1,0 +1,23 @@
+# 用途：屏蔽常见广告、统计、追踪与明显无用请求
+# 适用：减少广告加载、追踪上报和无意义网络噪音
+
+# Advertising
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,adservice.google.com
+DOMAIN-SUFFIX,adservice.google.com.hk
+DOMAIN-SUFFIX,ads-twitter.com
+
+# Analytics / tracking
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,branch.io
+
+# Obvious telemetry / useless endpoints
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,scorecardresearch.com
+DOMAIN-SUFFIX,quantserve.com
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,umtrack.com

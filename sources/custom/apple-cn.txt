@@ -1,0 +1,15 @@
+# 用途：Apple 中国大陆相关服务优先直连
+# 适用：App Store、iCloud、Apple 媒体分发与 Apple 常见中国大陆访问场景
+
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,apple-pay-gateway.apple
+DOMAIN-SUFFIX,applemusic.com
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,push.apple.com

@@ -1,0 +1,7 @@
+# Claude
+# Claude and Anthropic related domains and endpoints.
+# Generated for Clash/Mihomo from MyShuntRules
+# Format: classical rule-set for Mihomo/Clash.Meta compatible clients
+# Note: PROCESS-NAME rules require Mihomo/Clash.Meta support
+
+DOMAIN,cdn.usefathom.com

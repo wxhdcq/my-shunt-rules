@@ -1,0 +1,15 @@
+# AI
+# General AI services supplement rules.
+# Generated for Loon from MyShuntRules
+# Format: Loon rule list
+
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,x.ai

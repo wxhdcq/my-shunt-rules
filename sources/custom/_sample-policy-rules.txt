@@ -1,0 +1,17 @@
+# Example custom policy rules
+# This file is for reference only and is not merged automatically.
+
+# direct
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,icloud.com,DIRECT
+IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
+
+# proxy
+DOMAIN-SUFFIX,youtube.com,PROXY
+DOMAIN-SUFFIX,openai.com,PROXY
+PROCESS-NAME,Telegram,PROXY
+
+# reject
+DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN-KEYWORD,tracker,REJECT
+USER-AGENT,MicroMessenger*,REJECT

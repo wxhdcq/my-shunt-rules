@@ -1,0 +1,3 @@
+# Custom Microsoft rules
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,live.com

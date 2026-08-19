@@ -1,0 +1,3 @@
+# Custom Supercell rules
+DOMAIN-SUFFIX,supercell.com
+DOMAIN-SUFFIX,supercell.net

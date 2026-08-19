@@ -1,0 +1,37 @@
+# 用途：建议直连的大陆常见服务
+# 适用：日常国内应用、支付、电商、云服务、教育和常见 CDN
+
+# Tencent
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,tenpay.com
+
+# Alibaba
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,alicdn.com
+DOMAIN-SUFFIX,alipay.com
+
+# ByteDance
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,bytedance.com
+
+# Baidu
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,baidubce.com
+
+# Bilibili / JD / NetEase
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,jd.com
+DOMAIN-SUFFIX,163.com
+
+# Common LAN / local
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,lan
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve

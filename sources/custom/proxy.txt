@@ -1,0 +1,31 @@
+# 用途：需要优先走代理的常见海外服务
+# 适用：大陆网络环境下访问受限、跨境服务、国际社交与 AI 服务
+
+# YouTube
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,youtu.be
+
+# Telegram
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,tdesktop.com
+
+# OpenAI / ChatGPT
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+
+# Gemini / Google AI
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,deepmind.com
+
+# Twitter / X
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,t.co

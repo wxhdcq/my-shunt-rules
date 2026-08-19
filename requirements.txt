@@ -1,0 +1,3 @@
+# Runtime dependencies for the rules build workflow.
+PyYAML>=6.0.1
+pytest>=8.0.0

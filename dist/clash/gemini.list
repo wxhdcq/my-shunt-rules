@@ -1,0 +1,17 @@
+# Gemini
+# Gemini related domains and endpoints.
+# Generated for Clash/Mihomo from MyShuntRules
+# Format: classical rule-set for Mihomo/Clash.Meta compatible clients
+# Note: PROCESS-NAME rules require Mihomo/Clash.Meta support
+
+DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,generativelanguage
