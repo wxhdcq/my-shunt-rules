@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 from lib.pipeline import load_config, normalize_upstream_sources
@@ -23,7 +24,7 @@ def main() -> int:
         parser.error("input and output must be provided together")
 
     config = load_config()
-    results = normalize_upstream_sources(config)
+    results = normalize_upstream_sources(config, strict=os.environ.get("MYSHUNTRULES_STRICT_FETCH") == "1")
     for source, count in results:
         print(
             f"Normalized {source.name} -> "

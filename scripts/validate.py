@@ -8,6 +8,8 @@ from typing import Any
 import yaml
 
 from lib.config import load_project_config
+from lib.rules import read_rule_file
+from lib.rule_validation import validate_rule_line
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -102,8 +104,13 @@ def check_dist_outputs(report: ValidationReport) -> None:
             path = platform_dir / f"{category.name}.list"
             if not path.exists():
                 report.add(f"{path.relative_to(ROOT)}: missing rule output")
-            elif not _is_nonempty_text(path):
-                report.add(f"{path.relative_to(ROOT)}: rule output is empty")
+            elif not read_rule_file(path):
+                report.add(f"{path.relative_to(ROOT)}: rule output has no effective rules")
+            else:
+                for line, text in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                    reason = validate_rule_line(text)
+                    if reason:
+                        report.add(f"{path.relative_to(ROOT)}:{line}: {reason}")
 
 def check_manifest(report: ValidationReport) -> None:
     data = _read_json(MANIFEST_PATH, report)

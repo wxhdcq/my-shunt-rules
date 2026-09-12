@@ -8,7 +8,7 @@ from lib.pipeline import fetch_upstream_sources, load_config
 
 def main() -> int:
     config = load_config()
-    # Strict mode is for CI: if every enabled source fails, stop the build immediately.
+    # Publishing requires every enabled source to download and validate successfully.
     strict = "--strict" in sys.argv or os.environ.get("MYSHUNTRULES_STRICT_FETCH") == "1"
 
     try:

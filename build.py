@@ -1,18 +1,19 @@
 from __future__ import annotations
 
-import subprocess
+import argparse
 import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from lib.build_guard import run_guarded_build
 PYTHON = sys.executable
 # Keep the build order explicit here so local runs and GitHub Actions stay identical.
 STEPS = [
     ("fetch_upstream", [PYTHON, "scripts/fetch_upstream.py"]),
     ("update_bank_rules", [PYTHON, "scripts/update_bank_rules.py"]),
     ("normalize_rules", [PYTHON, "scripts/normalize_rules.py"]),
-    ("validate_rules", [PYTHON, "scripts/validate_rules.py"]),
     ("merge_rules", [PYTHON, "scripts/merge_rules.py"]),
     ("export_clash", [PYTHON, "scripts/export_clash.py"]),
     ("export_loon", [PYTHON, "scripts/export_loon.py"]),
@@ -23,20 +24,14 @@ STEPS = [
 
 
 def main() -> int:
-    print(f"[build] root={ROOT}")
-    print(f"[build] python={PYTHON}")
-
-    for step_name, command in STEPS:
-        # Run each step as an isolated process so a failure returns a clear non-zero exit code.
-        print(f"[build] start {step_name}")
-        completed = subprocess.run(command, cwd=ROOT)
-        if completed.returncode != 0:
-            print(f"[build] failed {step_name} (exit={completed.returncode})")
-            return completed.returncode
-        print(f"[build] done {step_name}")
-
-    print("[build] completed successfully")
-    return 0
+    parser = argparse.ArgumentParser(description="Build, validate and test rules in a temporary workspace.")
+    parser.add_argument("--allow-large-drop", action="store_true",
+                        help="Allow a reviewed rule-count reduction above 20%%; empty outputs still fail.")
+    args = parser.parse_args()
+    return run_guarded_build(ROOT, STEPS, allow_large_drop=args.allow_large_drop,
+                             source_paths=("sources/custom/hong-kong-banks.txt",
+                                           "sources/custom/us-banks.txt",
+                                           "sources/custom/us-financial-services.txt"))
 
 
 if __name__ == "__main__":

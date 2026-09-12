@@ -1,13 +1,18 @@
 from __future__ import annotations
 
 from collections import Counter
+import os
 from pathlib import Path
+import re
+import tempfile
 from urllib.error import URLError
 from urllib.request import Request, urlopen
 
 from .config import load_project_config
 from .models import ProjectConfig, RuleCategory, UpstreamSource
-from .rules import read_rule_file, stable_unique, write_rule_file
+from .rules import (SUPPORTED_RULE_TYPES, normalize_rule_line, read_rule_file,
+                    stable_unique, strip_inline_comment, write_rule_file)
+from .rule_validation import validate_rule_line
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -66,36 +71,75 @@ def _remove_stale_files(directory: Path, expected_names: set[str]) -> None:
                 path.unlink()
 
 
+MAX_SOURCE_BYTES = 8 * 1024 * 1024
+
+
+def validate_upstream_body(body: str) -> list[str]:
+    """Accept text rule lists, never an HTTP-200 error page or an empty dataset."""
+    if re.search(r"<!doctype\s+html|<\s*(?:html|head|body)\b", body, re.IGNORECASE):
+        raise ValueError("received HTML instead of a rule list")
+    rules = []
+    for number, line in enumerate(body.splitlines(), 1):
+        rule_type = strip_inline_comment(line).partition(",")[0].strip().upper()
+        if rule_type not in SUPPORTED_RULE_TYPES:
+            continue  # Existing supported-type policy is unchanged.
+        error = validate_rule_line(line)
+        if error:
+            raise ValueError(f"invalid rule at line {number}: {error}")
+        rules.append(normalize_rule_line(line))
+    rules = stable_unique(rules)
+    if not rules:
+        raise ValueError("source contains no valid supported rules")
+    return rules
+
+
+def _atomic_write(path: Path, body: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, name = tempfile.mkstemp(prefix=".download-", dir=path.parent)
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8") as output:
+            output.write(body)
+        os.replace(name, path)
+    finally:
+        Path(name).unlink(missing_ok=True)
+
+
 def fetch_upstream_sources(
     config: ProjectConfig,
     *,
     strict: bool = False,
 ) -> list[tuple[UpstreamSource, int]]:
-    RAW_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     results: list[tuple[UpstreamSource, int]] = []
     enabled_sources = [source for source in config.sources if source.enabled]
+    downloaded: list[tuple[UpstreamSource, str, int]] = []
+    failures: list[str] = []
 
     for source in enabled_sources:
         try:
             request = Request(source.url, headers=DEFAULT_HTTP_HEADERS)
             with urlopen(request, timeout=30) as response:
-                body = response.read().decode("utf-8", errors="ignore")
-        except URLError as exc:
-            print(f"Warning: failed to fetch {source.name}: {exc}")
+                data = response.read(MAX_SOURCE_BYTES + 1)
+            if len(data) > MAX_SOURCE_BYTES:
+                raise ValueError("source exceeds 8 MiB limit")
+            body = data.decode("utf-8-sig")
+            rules = validate_upstream_body(body)
+        except (URLError, OSError, UnicodeError, ValueError) as exc:
+            failures.append(f"{source.name}: {type(exc).__name__}")
+            print(f"Warning: failed to fetch or validate {source.name} ({type(exc).__name__})")
             continue
+        downloaded.append((source, body, len(rules)))
 
-        raw_path = RAW_CACHE_DIR / f"{source.name}.txt"
-        raw_path.write_text(body, encoding="utf-8")
-        results.append((source, len(stable_unique(read_rule_file(raw_path)))))
-
-    # CI uses strict mode so a completely failed refresh cannot silently fall back to old cache.
-    if strict and enabled_sources and not results:
-        raise RuntimeError("strict fetch mode: all enabled upstream sources failed to fetch")
+    # Do not replace any cached source until the entire strict refresh is valid.
+    if strict and failures:
+        raise RuntimeError("strict fetch mode: incomplete upstream refresh: " + "; ".join(failures))
+    for source, body, count in downloaded:
+        _atomic_write(RAW_CACHE_DIR / f"{source.name}.txt", body)
+        results.append((source, count))
 
     return results
 
 
-def normalize_upstream_sources(config: ProjectConfig) -> list[tuple[UpstreamSource, int]]:
+def normalize_upstream_sources(config: ProjectConfig, *, strict: bool = False) -> list[tuple[UpstreamSource, int]]:
     NORMALIZED_CACHE_DIR.mkdir(parents=True, exist_ok=True)
     expected_names = {
         f"{source.category}__{source.priority:04d}__{source.platform}__{source.name}.txt"
@@ -115,12 +159,15 @@ def normalize_upstream_sources(config: ProjectConfig) -> list[tuple[UpstreamSour
         )
 
         if not raw_path.exists():
+            if strict:
+                raise RuntimeError(f"Missing raw source in strict mode: {source.name}")
             if normalized_path.exists():
                 normalized_path.unlink()
             print(f"Warning: skip normalize for {source.name} because raw cache is missing")
             continue
 
-        rules = stable_unique(read_rule_file(raw_path))
+        rules = (validate_upstream_body(raw_path.read_text(encoding="utf-8"))
+                 if strict else stable_unique(read_rule_file(raw_path)))
         write_rule_file(normalized_path, rules)
         results.append((source, len(rules)))
 
@@ -145,6 +192,8 @@ def _merge_candidates_for_category(config: ProjectConfig, category: RuleCategory
             f"{source.category}__{source.priority:04d}__{source.platform}__{source.name}.txt"
         )
         if not normalized_path.exists():
+            if os.environ.get("MYSHUNTRULES_STRICT_FETCH") == "1":
+                raise RuntimeError(f"Missing normalized source in strict mode: {source.name}")
             print(f"Warning: skip merge for {source.name} because normalized cache is missing")
             continue
         candidates.append((source.priority, f"{source.platform}:{source.name}", read_rule_file(normalized_path)))

@@ -1,0 +1,45 @@
+name: Check Rules
+
+"on":
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - "build.py"
+      - "requirements.txt"
+      - "sources/upstream.yaml"
+      - "config/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-rules-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install test dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Validate published files offline
+        run: |
+          python scripts/validate_rules.py
+          python scripts/validate.py
+      - name: Run isolated regression tests
+        run: python -m pytest -q
+      - name: Verify tests and generators leave published files unchanged
+        run: |
+          python scripts/build_readme.py
+          python scripts/generate_manifest.py
+          git diff --exit-code
