@@ -1,0 +1,97 @@
+name: AI 开发任务
+description: 用明确范围、验收标准和授权记录拆分一次 AI 开发任务。
+title: "[AI] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        一次只提交一个可独立验收的小任务。请用中文填写，不粘贴密钥或账户数据。
+        创建 Issue 不等于批准实施；AI 应核实用户的授权记录。默认交付独立分支和 PR，合并另行确认。
+  - type: textarea
+    id: current_state
+    attributes:
+      label: 当前状态与目标
+      description: 写清具体触发条件、当前行为及期望结果。
+      placeholder: |
+        当前行为：
+        期望行为：
+        相关文件或复现步骤：
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: 基线与任务分支
+      description: 不知道完整 SHA 时写“待 AI 只读核实”，实施前必须补齐。Issue 编号可作为任务编号。
+      placeholder: |
+        目标分支：main
+        完整基础 SHA：
+        任务编号：
+        实施分支：codex/<任务编号>-<简述>
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 允许修改范围
+      description: 列出准确文件或必要目录，以及禁止触碰的范围；扩大范围需要再次批准。
+      placeholder: |
+        允许修改：
+        禁止修改：main、密钥、部署和仓库设置，以及……
+        是否允许联网完整构建及生成物变更：
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 自动验收标准
+      description: 每项写命令、预期结果和失败场景；文档任务也要列出适用的现有检查。
+      placeholder: |
+        命令与预期结果：
+        必须覆盖的失败场景（不适用时解释）：
+        CI 检查：Check Rules / check
+    validations:
+      required: true
+  - type: textarea
+    id: mobile_acceptance
+    attributes:
+      label: 手机人工验收与限制
+      description: 写出 iPhone 上可执行的步骤；硬件、客户端或账户未具备时明确列为待验。
+      placeholder: |
+        操作步骤和预期结果：
+        要查看的 PR、日志或产物：
+        手机无法验证的部分：
+    validations:
+      required: true
+  - type: textarea
+    id: risk_rollback
+    attributes:
+      label: 风险与回滚
+      description: 说明对现有用户和生成物的影响，以及失败时如何恢复。
+      placeholder: |
+        主要风险：
+        合并是否触发发布或改变订阅文件：
+        回滚方案：
+    validations:
+      required: true
+  - type: textarea
+    id: authorization
+    attributes:
+      label: 授权记录
+      description: 填写用户已批准的范围及可核对的会话或评论记录；未批准写“待批准”。不要把填表当作授权。
+      placeholder: |
+        实施：待批准 / 已批准，记录：
+        PR：是否包含在实施授权中：
+        合并：待批准
+        部署或仓库设置变更：未授权 / 不适用
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: 执行约定
+      options:
+        - label: 我已理解创建任务不等于批准合并；实施须使用独立分支和 PR。
+          required: true
+        - label: 验证失败应如实报告，不通过删测试、放宽断言或隐藏错误来交付。
+          required: true
