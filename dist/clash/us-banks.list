@@ -162,7 +162,6 @@ DOMAIN-SUFFIX,andover.bank
 DOMAIN-SUFFIX,andrewjohnsonbank.com
 DOMAIN-SUFFIX,androscogginbank.com
 DOMAIN-SUFFIX,angelinabank.com
-DOMAIN-SUFFIX,annastate.com
 DOMAIN-SUFFIX,anstaff.bank
 DOMAIN-SUFFIX,anthembank.com
 DOMAIN-SUFFIX,antwerpexchangebank.com
@@ -1382,7 +1381,7 @@ DOMAIN-SUFFIX,fayettesavings.com
 DOMAIN-SUFFIX,fb-t.com
 DOMAIN-SUFFIX,fb247.com
 DOMAIN-SUFFIX,fbal.bank
-DOMAIN-SUFFIX,fbandtbank.com
+DOMAIN-SUFFIX,fbandt.bank
 DOMAIN-SUFFIX,fbceleste.com
 DOMAIN-SUFFIX,fbcentralohio.com
 DOMAIN-SUFFIX,fbh.bank
@@ -1440,6 +1439,7 @@ DOMAIN-SUFFIX,ffl.bank
 DOMAIN-SUFFIX,fflorain.bank
 DOMAIN-SUFFIX,ffmbank.com
 DOMAIN-SUFFIX,ffnbank.com
+DOMAIN-SUFFIX,ffs.bank
 DOMAIN-SUFFIX,ffsavings.com
 DOMAIN-SUFFIX,ffsb-nc.com
 DOMAIN-SUFFIX,ffsbangola.com
@@ -1534,7 +1534,6 @@ DOMAIN-SUFFIX,firstfeddelta.bank
 DOMAIN-SUFFIX,firstfederalbanking.com
 DOMAIN-SUFFIX,firstfederalbanknc.com
 DOMAIN-SUFFIX,firstfederalbankofohio.bank
-DOMAIN-SUFFIX,firstfederalbath.com
 DOMAIN-SUFFIX,firstfederalhazard.com
 DOMAIN-SUFFIX,firstfederalmascoutah.com
 DOMAIN-SUFFIX,firstfederalmiddletown.com
@@ -2322,7 +2321,7 @@ DOMAIN-SUFFIX,inb.com
 DOMAIN-SUFFIX,inbank.com
 DOMAIN-SUFFIX,inbk.com
 DOMAIN-SUFFIX,incommonsbank.com
-DOMAIN-SUFFIX,incrediblebank.com
+DOMAIN-SUFFIX,incredible.bank
 DOMAIN-SUFFIX,independencestatebank.com
 DOMAIN-SUFFIX,independentbank.com
 DOMAIN-SUFFIX,industrial-bank.com
@@ -2570,7 +2569,6 @@ DOMAIN-SUFFIX,mbtga.com
 DOMAIN-SUFFIX,mbwi.com
 DOMAIN-SUFFIX,mc.bank
 DOMAIN-SUFFIX,mcbankny.com
-DOMAIN-SUFFIX,mcbbank.net
 DOMAIN-SUFFIX,mcbt.com
 DOMAIN-SUFFIX,mccbflorida.com
 DOMAIN-SUFFIX,mcclainbank.com
@@ -3009,7 +3007,6 @@ DOMAIN-SUFFIX,pbandt.bank
 DOMAIN-SUFFIX,pbbanking.com
 DOMAIN-SUFFIX,pbc.bank
 DOMAIN-SUFFIX,pbdl.net
-DOMAIN-SUFFIX,pbet.bank
 DOMAIN-SUFFIX,pbkbank.com
 DOMAIN-SUFFIX,pbknc.com
 DOMAIN-SUFFIX,pbmag.com
@@ -3078,6 +3075,7 @@ DOMAIN-SUFFIX,perennialbank.com
 DOMAIN-SUFFIX,perrytonbank.com
 DOMAIN-SUFFIX,perufederalsavings.com
 DOMAIN-SUFFIX,petefishskiles.com
+DOMAIN-SUFFIX,pfb.bank
 DOMAIN-SUFFIX,pfbt.com
 DOMAIN-SUFFIX,phenix-girard.com
 DOMAIN-SUFFIX,philadelphiatrust.com
