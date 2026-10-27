@@ -8,7 +8,7 @@
 # Source: https://www.schwab.com/
 # Source: https://www.fidelity.com/
 # Source: https://www.revolut.com/en-US/
-# Unique domains: 80
+# Unique domains: 81
 
 DOMAIN-SUFFIX,aboutschwab.com
 DOMAIN-SUFFIX,acorns.com
@@ -79,6 +79,7 @@ DOMAIN-SUFFIX,stripe.global
 DOMAIN-SUFFIX,stripe.network
 DOMAIN-SUFFIX,stripecdn.com
 DOMAIN-SUFFIX,tastytrade.com
+DOMAIN-SUFFIX,thinkorswim.com
 DOMAIN-SUFFIX,tradestation.com
 DOMAIN-SUFFIX,tradier.com
 DOMAIN-SUFFIX,transferwise.com
