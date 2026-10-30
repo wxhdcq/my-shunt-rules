@@ -294,7 +294,6 @@ DOMAIN-SUFFIX,bankflorida.com
 DOMAIN-SUFFIX,bankfm.com
 DOMAIN-SUFFIX,bankfmb.com
 DOMAIN-SUFFIX,bankfnbd.com
-DOMAIN-SUFFIX,bankfnbt.com
 DOMAIN-SUFFIX,bankfortress.com
 DOMAIN-SUFFIX,bankforward.com
 DOMAIN-SUFFIX,bankfsb.com
@@ -672,6 +671,7 @@ DOMAIN-SUFFIX,bristolcountysavings.com
 DOMAIN-SUFFIX,bristolmorganbank.com
 DOMAIN-SUFFIX,broadstreet.bank
 DOMAIN-SUFFIX,broadway.bank
+DOMAIN-SUFFIX,brooks.bank
 DOMAIN-SUFFIX,brookvillesavings.com
 DOMAIN-SUFFIX,bruningbank.com
 DOMAIN-SUFFIX,brunswickstatebank.com
@@ -901,7 +901,6 @@ DOMAIN-SUFFIX,citizens1stbank.com
 DOMAIN-SUFFIX,citizensada.bank
 DOMAIN-SUFFIX,citizensalliancebank.com
 DOMAIN-SUFFIX,citizensbank.com
-DOMAIN-SUFFIX,citizensbank.net
 DOMAIN-SUFFIX,citizensbank.ws
 DOMAIN-SUFFIX,citizensbank24.com
 DOMAIN-SUFFIX,citizensbankal.com
@@ -1159,6 +1158,7 @@ DOMAIN-SUFFIX,csbpaton.com
 DOMAIN-SUFFIX,csbsa.com
 DOMAIN-SUFFIX,csbsealy.com
 DOMAIN-SUFFIX,csbsheldon.com
+DOMAIN-SUFFIX,csbtexas.com
 DOMAIN-SUFFIX,csbtx.bank
 DOMAIN-SUFFIX,csbweb.com
 DOMAIN-SUFFIX,csbwyoming.com
@@ -1387,7 +1387,7 @@ DOMAIN-SUFFIX,fbcentralohio.com
 DOMAIN-SUFFIX,fbh.bank
 DOMAIN-SUFFIX,fblake.bank
 DOMAIN-SUFFIX,fbmilton.com
-DOMAIN-SUFFIX,fbot.com
+DOMAIN-SUFFIX,fbot.bank
 DOMAIN-SUFFIX,fbsc.com
 DOMAIN-SUFFIX,fbsw.com
 DOMAIN-SUFFIX,fbt.bank
@@ -1514,7 +1514,7 @@ DOMAIN-SUFFIX,firstcitizens.com
 DOMAIN-SUFFIX,firstcitizensbank.com
 DOMAIN-SUFFIX,firstcitizensnational.com
 DOMAIN-SUFFIX,firstcitizensww.com
-DOMAIN-SUFFIX,firstcitybankga.com
+DOMAIN-SUFFIX,firstcity.bank
 DOMAIN-SUFFIX,firstclassbanking.com
 DOMAIN-SUFFIX,firstcolonybank.net
 DOMAIN-SUFFIX,firstcommand.com
@@ -1523,7 +1523,7 @@ DOMAIN-SUFFIX,firstcommercebk.com
 DOMAIN-SUFFIX,firstcommunity.net
 DOMAIN-SUFFIX,firstcommunitybank.com
 DOMAIN-SUFFIX,firstcommunitybanker.com
-DOMAIN-SUFFIX,firstcommunitysc.com
+DOMAIN-SUFFIX,firstcommunitybankers.com
 DOMAIN-SUFFIX,firstcountybank.com
 DOMAIN-SUFFIX,firstdakota.com
 DOMAIN-SUFFIX,firstelectronic.com
@@ -1597,7 +1597,6 @@ DOMAIN-SUFFIX,firstrust.com
 DOMAIN-SUFFIX,firstsandl.net
 DOMAIN-SUFFIX,firstsavingsbanks.com
 DOMAIN-SUFFIX,firstscotia.com
-DOMAIN-SUFFIX,firstseacoastbank.com
 DOMAIN-SUFFIX,firstsecurebank.com
 DOMAIN-SUFFIX,firstsecuritybankmo.com
 DOMAIN-SUFFIX,firstsecuritybanks.com
@@ -1728,6 +1727,7 @@ DOMAIN-SUFFIX,fnbba.com
 DOMAIN-SUFFIX,fnbbagley.com
 DOMAIN-SUFFIX,fnbballinger.com
 DOMAIN-SUFFIX,fnbbangor.net
+DOMAIN-SUFFIX,fnbbank.net
 DOMAIN-SUFFIX,fnbbastrop.bank
 DOMAIN-SUFFIX,fnbbemidji.com
 DOMAIN-SUFFIX,fnbblanchester.com
@@ -1755,7 +1755,6 @@ DOMAIN-SUFFIX,fnbevant.com
 DOMAIN-SUFFIX,fnbfal.com
 DOMAIN-SUFFIX,fnbfirst.com
 DOMAIN-SUFFIX,fnbfleming.com
-DOMAIN-SUFFIX,fnbfontanelle.com
 DOMAIN-SUFFIX,fnbforyou.com
 DOMAIN-SUFFIX,fnbfrankfortks.com
 DOMAIN-SUFFIX,fnbfredericksd.com
@@ -1791,7 +1790,6 @@ DOMAIN-SUFFIX,fnblivingston.com
 DOMAIN-SUFFIX,fnblj.com
 DOMAIN-SUFFIX,fnbmanhattan.com
 DOMAIN-SUFFIX,fnbmanning.com
-DOMAIN-SUFFIX,fnbmarlow.com
 DOMAIN-SUFFIX,fnbmbank.com
 DOMAIN-SUFFIX,fnbmcalester.com
 DOMAIN-SUFFIX,fnbmcintosh.com
@@ -2442,10 +2440,11 @@ DOMAIN-SUFFIX,lanarkbank.com
 DOMAIN-SUFFIX,landmarkbankla.com
 DOMAIN-SUFFIX,laonastatebank.com
 DOMAIN-SUFFIX,lauderdalecountybank.com
+DOMAIN-SUFFIX,lawrence.bank
 DOMAIN-SUFFIX,lawrenceburgfederal.com
 DOMAIN-SUFFIX,lbandt.com
 DOMAIN-SUFFIX,lbt.com
-DOMAIN-SUFFIX,lbtexas.com
+DOMAIN-SUFFIX,lbtx.com
 DOMAIN-SUFFIX,lccbank.com
 DOMAIN-SUFFIX,lcnb.com
 DOMAIN-SUFFIX,lead.bank
@@ -2629,15 +2628,16 @@ DOMAIN-SUFFIX,midnatbank.com
 DOMAIN-SUFFIX,midpennbank.com
 DOMAIN-SUFFIX,midstatesbank.com
 DOMAIN-SUFFIX,midwest.bank
-DOMAIN-SUFFIX,midwestbank.net
+DOMAIN-SUFFIX,midwestbank.bank
 DOMAIN-SUFFIX,midwestbankcentre.com
 DOMAIN-SUFFIX,midwestheritage.com
 DOMAIN-SUFFIX,midwestnationalbank.com
 DOMAIN-SUFFIX,milestonebank.com
-DOMAIN-SUFFIX,milfordbank.com
+DOMAIN-SUFFIX,milford.bank
 DOMAIN-SUFFIX,milfordfederal.com
 DOMAIN-SUFFIX,milledgevillebank.com
 DOMAIN-SUFFIX,millennial.bank
+DOMAIN-SUFFIX,millenniumbank.com
 DOMAIN-SUFFIX,millvillesavings.com
 DOMAIN-SUFFIX,millyardbank.com
 DOMAIN-SUFFIX,miltonsavingsbank.com
@@ -2716,7 +2716,6 @@ DOMAIN-SUFFIX,myboc.bank
 DOMAIN-SUFFIX,mybrb.com
 DOMAIN-SUFFIX,mycbl.bank
 DOMAIN-SUFFIX,mycbstl.bank
-DOMAIN-SUFFIX,mycc.bank
 DOMAIN-SUFFIX,myccnb.com
 DOMAIN-SUFFIX,mycentennial.bank
 DOMAIN-SUFFIX,mycentral.bank
@@ -2859,7 +2858,6 @@ DOMAIN-SUFFIX,newwashbank.com
 DOMAIN-SUFFIX,nexbank.com
 DOMAIN-SUFFIX,nextierbank.com
 DOMAIN-SUFFIX,ngbank.com
-DOMAIN-SUFFIX,ngnb.bank
 DOMAIN-SUFFIX,nicoletbank.com
 DOMAIN-SUFFIX,nmbonline.com
 DOMAIN-SUFFIX,noblebank.com
@@ -3084,7 +3082,7 @@ DOMAIN-SUFFIX,phoenixfed.com
 DOMAIN-SUFFIX,pibank.com
 DOMAIN-SUFFIX,pibonline.com
 DOMAIN-SUFFIX,pickens.bank
-DOMAIN-SUFFIX,piedmontfederal.com
+DOMAIN-SUFFIX,piedmontfederal.bank
 DOMAIN-SUFFIX,piermontbank.com
 DOMAIN-SUFFIX,pilgrimbank.bank
 DOMAIN-SUFFIX,pillar.bank
@@ -3164,6 +3162,7 @@ DOMAIN-SUFFIX,prioritybank.com
 DOMAIN-SUFFIX,priorityonebank.com
 DOMAIN-SUFFIX,prism.bank
 DOMAIN-SUFFIX,private-wealth.us.cibc.com
+DOMAIN-SUFFIX,private.bank
 DOMAIN-SUFFIX,proctorbank.com
 DOMAIN-SUFFIX,producer.bank
 DOMAIN-SUFFIX,producers.bank
@@ -3263,7 +3262,6 @@ DOMAIN-SUFFIX,rivercitybank.com
 DOMAIN-SUFFIX,rivercitybankky.com
 DOMAIN-SUFFIX,riverhillsbank.com
 DOMAIN-SUFFIX,riversedge.bank
-DOMAIN-SUFFIX,riverside.bank
 DOMAIN-SUFFIX,riversidebanc.com
 DOMAIN-SUFFIX,riversidesavings.com
 DOMAIN-SUFFIX,riverviewbank.com
@@ -3716,6 +3714,7 @@ DOMAIN-SUFFIX,thefsb.bank
 DOMAIN-SUFFIX,thehamiltonbank.bank
 DOMAIN-SUFFIX,theharborbank.com
 DOMAIN-SUFFIX,thehomenationalbank.com
+DOMAIN-SUFFIX,theindebank.com
 DOMAIN-SUFFIX,thejeffersonbank.com
 DOMAIN-SUFFIX,theksb.com
 DOMAIN-SUFFIX,themarinebank.com
@@ -3766,7 +3765,7 @@ DOMAIN-SUFFIX,tollesonwealth.com
 DOMAIN-SUFFIX,tompkinsbank.com
 DOMAIN-SUFFIX,tompkinsstatebank.com
 DOMAIN-SUFFIX,torringtonsavings.bank
-DOMAIN-SUFFIX,touchmarknb.com
+DOMAIN-SUFFIX,touchmarkbank.com
 DOMAIN-SUFFIX,towercommunitybank.com
 DOMAIN-SUFFIX,townbank.us
 DOMAIN-SUFFIX,towncenterbank.net
@@ -3948,7 +3947,6 @@ DOMAIN-SUFFIX,visionbank.com
 DOMAIN-SUFFIX,vnb.com
 DOMAIN-SUFFIX,vnbt.bank
 DOMAIN-SUFFIX,volfed.com
-DOMAIN-SUFFIX,volunteer.bank
 DOMAIN-SUFFIX,wabt.com
 DOMAIN-SUFFIX,wadenastatebank.com
 DOMAIN-SUFFIX,wafdbank.com
@@ -4107,6 +4105,7 @@ DOMAIN-SUFFIX,yourfriendlybank.com
 DOMAIN-SUFFIX,yourfsb.com
 DOMAIN-SUFFIX,yourhomebank.com
 DOMAIN-SUFFIX,yourlifeyourbank.com
+DOMAIN-SUFFIX,yournolabank.com
 DOMAIN-SUFFIX,yournxtbank.com
 DOMAIN-SUFFIX,yourpeoples.bank
 DOMAIN-SUFFIX,yourstatebank.com
